@@ -1,11 +1,12 @@
 {
   "name": "vuepress-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a vuepress template",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/Wildlifes/vuepress-starter#readme",
   "devDependencies": {
+    "conventional-changelog-cli": "^2.0.31",
+    "standard-version": "^7.0.1",
     "vuepress": "^1.2.0"
   }
 }
