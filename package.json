@@ -8,7 +8,8 @@
     "docs:build": "vuepress build docs",
     "cz": "git cz",
     "release": "standard-version",
-    "github-release": "conventional-github-releaser -p angular -t '18f7e263e7fa128ab774efb39fed94269dc94df6'"
+    "publish":"git push --follow-tags origin master",
+    "github-release": "conventional-github-releaser -p angular -t 'c5937be724bce978b309b0be0b5d3cea1fc76de6'"
   },
   "repository": {
     "type": "github",
