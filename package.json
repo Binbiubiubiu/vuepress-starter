@@ -7,8 +7,9 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "cz": "git cz",
-    "release": "standard-version && git push --follow-tags origin master",
-    "github-release": "conventional-github-releaser -p angular -t 'c5937be724bce978b309b0be0b5d3cea1fc76de6'"
+    "git:push": "git push --follow-tags origin master",
+    "release": "standard-version",
+    "github-release": "conventional-github-releaser -p angular"
   },
   "repository": {
     "type": "github",
