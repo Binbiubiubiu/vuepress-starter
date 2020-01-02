@@ -1,6 +1,6 @@
 {
   "name": "vuepress-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a vuepress template",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "docs:build": "vuepress build docs",
     "cz": "git cz",
     "release": "standard-version",
-    "github-release": "conventional-github-releaser -p angular -r 0"
+    "github-release": "conventional-github-releaser -p angular -t '6ea45408e241434095afa568925c1a7a0a1c58b4'"
   },
   "repository": {
     "type": "github",
