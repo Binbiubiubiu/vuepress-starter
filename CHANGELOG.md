@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](http://github.com/Wildlifes/vuepress-starter/compare/v2.0.0...v2.0.2) (2020-01-02)
+
+
+### Bug Fixes
+
+* **.gitignore:** update .gitignore ([8c14b5a](http://github.com/Wildlifes/vuepress-starter/commit/8c14b5a8b1af837c53e84800ae1213613f2f01b9))
+* **package.json:** github token err ([fb893dc](http://github.com/Wildlifes/vuepress-starter/commit/fb893dc508a93ea3ef9d0186fb56329ac5613e00))
+
 ## 2.0.0 (2020-01-02)
 
 
