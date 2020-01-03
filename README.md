@@ -1,7 +1,7 @@
 # vuepress-starter
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://travis-ci.com/Wildlifes/vuepress-starter.svg?branch=master)](https://travis-ci.com/Wildlifes/vuepress-starter)
+[![Build Status](https://travis-ci.org/Wildlifes/vuepress-starter.svg?branch=master)](https://travis-ci.org/Wildlifes/vuepress-starter)
 
 个人学习了解 vuepress 项目使用
 
@@ -63,11 +63,11 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
 
 ```json
 {
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
     }
-  }
 }
 ```
 

@@ -3,15 +3,21 @@ node_js: stable
 
 os: linux
 
+cache:
+    yarn: true
+
+before_install:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version version-number
+    - export PATH="$HOME/.yarn/bin:$PATH"
 install:
-  - yarn install # npm ci
+    - yarn install # npm ci
 script:
-  - yarn docs:build
+    - yarn docs:build
 deploy:
-  provider: pages
-  cleanup: true
-  local_dir: vuepress
-  token: $GITHUB_TOKEN
-  keep_history: true
-  on:
-    branch: master
+    provider: pages
+    cleanup: true
+    local_dir: vuepress
+    token: $GITHUB_TOKEN
+    keep_history: true
+    on:
+        branch: master
