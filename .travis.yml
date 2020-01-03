@@ -1,6 +1,8 @@
 language: node_js
 node_js: stable
 
+os: linux
+
 install:
   - yarn install # npm ci
 script:
