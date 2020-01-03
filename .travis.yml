@@ -12,7 +12,7 @@ script:
     - yarn docs:build
 deploy:
     provider: pages
-    cleanup: true
+    cleanup: false
     local_dir: vuepress
     token: $GITHUB_TOKEN
     keep_history: true
