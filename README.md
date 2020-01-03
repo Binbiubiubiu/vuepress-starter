@@ -18,8 +18,9 @@ yarn docs:build
 # 规范提交
 yarn cz
 
-# 规范提交
-yarn cz
+# 部署github page
+yarn gh-page:sh
+yarn gh-page
 
 # 修改对应版本，打上tag
 yarn release
