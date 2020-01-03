@@ -3,16 +3,13 @@ node_js: stable
 
 os: linux
 
-cache:
-    yarn: true
-
 install:
     - yarn install # npm ci
 script:
     - yarn docs:build
 deploy:
     provider: pages
-    cleanup: false
+    skip_cleanup: true
     local_dir: vuepress
     token: $GITHUB_TOKEN
     keep_history: true
