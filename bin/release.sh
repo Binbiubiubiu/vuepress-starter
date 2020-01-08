@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
-export CONVENTIONAL_GITHUB_RELEASER_TOKEN=313138610f53d79d11e7c881ec165f51b194ee77
-
 npx gitmoji-changelog
 
 git add -A
