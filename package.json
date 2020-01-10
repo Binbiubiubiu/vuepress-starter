@@ -11,7 +11,8 @@
     "release": "standard-version",
     "github-release": "conventional-github-releaser -p angular",
     "gh-page:sh": "./bin/deploy.sh",
-    "gh-page": "yarn docs:build && gh-pages -d vuepress"
+    "gh-page": "yarn docs:build && gh-pages -d vuepress",
+    "release-it": "release-it"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "cz-conventional-changelog": "3.0.2",
     "gh-pages": "^2.1.1",
     "husky": "^3.1.0",
+    "release-it": "^12.4.3",
     "standard-version": "^7.0.1",
     "vuepress": "^1.2.0"
   },

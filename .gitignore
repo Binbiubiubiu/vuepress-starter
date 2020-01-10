@@ -19,3 +19,5 @@ vuepress
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+.env
