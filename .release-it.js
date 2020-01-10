@@ -8,10 +8,11 @@ module.exports = {
     release: true
   },
   npm: false,
-  plugins: {
-    "@release-it/conventional-changelog": {
-      preset: "angular",
-      infile: "CHANGELOG.md"
-    }
+  git: {
+    changelog:
+      "npx auto-changelog --stdout --commit-limit false -u --template ./changelog.hbs"
+  },
+  hooks: {
+    "after:bump": "npx auto-changelog -p"
   }
 };
