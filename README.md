@@ -55,7 +55,7 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 安装 commitlint
 
 ```bash
-yarn add --D @commitlint/{config-conventional,cli}
+yarn add -D @commitlint/{config-conventional,cli}
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 ```
 

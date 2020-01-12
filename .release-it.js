@@ -10,7 +10,8 @@ module.exports = {
     "after:bump": "npx auto-changelog -p"
   },
   github: {
-    release: true
+    release: true,
+    releaseName: "${version}"
   },
   npm: false
 };
