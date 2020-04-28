@@ -5,10 +5,10 @@ name: Node.js Package
 
 on:
   push:
-    branches: ['release/*']
+    branches: [master]
     tags: ['v*']
   pull_request:
-    branches: ['release/*']
+    branches: [master]
 
 jobs:
   build:
