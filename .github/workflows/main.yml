@@ -48,7 +48,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: np --no-cleanup --yolo --no-publish
+      - run: npm run np-relaase
 
 #       - run: npm publish
 #         env:
