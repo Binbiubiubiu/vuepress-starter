@@ -1,6 +1,6 @@
 {
   "name": "vuepress-starter",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "a vuepress template",
   "main": "index.js",
   "scripts": {

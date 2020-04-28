@@ -1,5 +1,9 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [2.1.7](https://github.com/Wildlifes/vuepress-starter/compare/v2.0.35...v2.1.7) (2020-04-28)
+
 <a name="2.1.6"></a>
 ## 2.1.6 (2020-04-28)
 
@@ -178,5 +182,3 @@
 -  feat(package.json): add comititzen [[578688a](https://github.com/Simon-Bin/vuepress-starter/commit/578688a18b940b86cd5068fdd92f8c65bf880b3b)]
 -  chore(release): 1.0.2 [[096b567](https://github.com/Simon-Bin/vuepress-starter/commit/096b567fef7f61c5e29cb4fbfb49abe5856f72bb)]
 -  chore(release): 1.0.1 [[2243897](https://github.com/Simon-Bin/vuepress-starter/commit/224389744894f49217917838ffbba5fb30e4089f)]
-
-
