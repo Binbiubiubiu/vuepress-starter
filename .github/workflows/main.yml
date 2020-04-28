@@ -46,6 +46,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm config set sign-git-tag true
       - run: npm run np-relaase
 
 #       - run: npm publish
