@@ -39,9 +39,7 @@
     "vuepress": "^1.2.0"
   },
   "husky": {
-    "hooks": {
-      
-    }
+    "hooks": {}
   },
   "config": {
     "commitizen": {
