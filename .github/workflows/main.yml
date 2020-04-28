@@ -8,8 +8,7 @@ on:
     tags: 
       - 'v*'
   pull_request:
-    branches: 
-      - master
+    branches: [master]
 
 jobs:
   build:
@@ -22,18 +21,18 @@ jobs:
       - run: npm ci
       - run: npm test
 
-#   storybook:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: actions/setup-node@v1
-#         with:
-#           node-version: 12
-#       - name: Install dependencies
-#         run: npm ci
-#       - run: npm run deploy-storybook -- --ci
-#         env:
-#           GH_TOKEN: ${{github.}}:${{secrets.GITHUB_TOKEN}}
+  storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm ci
+      - run: npm run deploy-storybook -- --ci
+        env:
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
        
 
   publish-npm:
@@ -45,11 +44,18 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm config set sign-git-tag true
-      - run: npm run np-relaase
-
+#       - run: npm ci
 #       - run: npm publish
 #         env:
 #           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.GITHUB_REF }}
+          release_name: ${{ github.GITHUB_REF }}
+          draft: false
+          prerelease: false

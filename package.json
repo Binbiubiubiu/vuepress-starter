@@ -13,7 +13,8 @@
     "np-relaase": "np --no-cleanup --yolo --no-publish --preview",
     "gh-page:sh": "./bin/deploy.sh",
     "gh-page": "yarn docs:build && gh-pages -d vuepress",
-    "release-it": "release-it"
+    "release-it": "release-it",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@commitlint/config-conventional": "^8.2.0",
     "@release-it/conventional-changelog": "^1.1.0",
     "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.31",
     "conventional-github-releaser": "^3.1.3",
     "cz-conventional-changelog": "3.0.2",
     "gh-pages": "^2.1.1",
