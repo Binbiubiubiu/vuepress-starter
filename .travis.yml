@@ -1,17 +1,17 @@
-language: node_js
-node_js: stable
+# language: node_js
+# node_js: stable
 
-os: linux
+# os: linux
 
-install:
-    - yarn install # npm ci
-script:
-    - yarn docs:build
-deploy:
-    provider: pages
-    skip_cleanup: true
-    local_dir: vuepress
-    token: $GITHUB_TOKEN
-    keep_history: true
-    on:
-        branch: master
+# install:
+#     - yarn install # npm ci
+# script:
+#     - yarn docs:build
+# deploy:
+#     provider: pages
+#     skip_cleanup: true
+#     local_dir: vuepress
+#     token: $GITHUB_TOKEN
+#     keep_history: true
+#     on:
+#         branch: master
