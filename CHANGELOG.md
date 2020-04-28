@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.22.0](https://github.com/Simon-Bin/vuepress-starter/compare/v2.21.2...v2.22.0) (2020-04-28)
+
+
+### Features
+
+* 23 ([10e1293](https://github.com/Simon-Bin/vuepress-starter/commit/10e1293b82181289f345a35a030eff8b8296995b))
+
 ### [2.21.2](https://github.com/Simon-Bin/vuepress-starter/compare/v2.21.1...v2.21.2) (2020-04-28)
 
 ### [2.21.1](https://github.com/Sim-Bin/vuepress-starter/compare/v2.21.0...v2.21.1) (2020-04-28)
