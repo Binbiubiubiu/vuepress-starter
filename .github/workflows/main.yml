@@ -35,7 +35,7 @@ jobs:
 #         run: npm ci
 #       - run: npm run deploy-storybook -- --ci
 #         env:
-#           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+#           GH_TOKEN: ${{github.}}:${{secrets.GITHUB_TOKEN}}
        
 
   publish-npm:
@@ -70,4 +70,4 @@ jobs:
           preset: 'angular'
           tag-prefix: 'v'
           output-file: 'CHANGELOG.md'
-          release-count: '5'  
+          release-count: '0'  
