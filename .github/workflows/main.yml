@@ -57,10 +57,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ secrets.GITHUB_REF }}
-          release_name: ${{ secrets.GITHUB_REF }}
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
           draft: false
-          prerelease: true
+          prerelease: false
       
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v2.0.1
