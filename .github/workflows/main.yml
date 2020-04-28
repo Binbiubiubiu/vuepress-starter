@@ -45,6 +45,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm config set sign-git-tag true
       - run: npm run github-release -- -t ${{secrets.GITHUB_TOKEN}}
       - run: npm run changelog
 
