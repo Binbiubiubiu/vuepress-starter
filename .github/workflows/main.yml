@@ -47,27 +47,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-#       - run: npm ci
+      - run: npm ci
+      - run: np --no-cleanup --yolo --no-publish
+
 #       - run: npm publish
 #         env:
 #           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      
-#       - name: Create Release
-#         uses: actions/create-release@latest
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         with:
-#           tag_name: ${{ github.GITHUB_REF }}
-#           release_name: ${{ github.GITHUB_REF }}
-#           draft: false
-#           prerelease: false
-      
-      - name: Conventional Changelog Action
-        uses: TriPSs/conventional-changelog-action@v2.0.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          git-message: 'chore(release): {version}'
-          preset: 'angular'
-          tag-prefix: 'v'
-          output-file: 'CHANGELOG.md'
-          release-count: '0'  
+    
