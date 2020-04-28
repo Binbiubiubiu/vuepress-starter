@@ -1,6 +1,6 @@
 {
   "name": "vuepress-starter",
-  "version": "2.21.0",
+  "version": "2.21.1",
   "description": "a vuepress template",
   "main": "index.js",
   "scripts": {
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wildlifes/vuepress-starter.git"
+    "url": "git+https://github.com/Sim-Bin/vuepress-starter.git"
   },
   "keywords": [],
   "author": "lvbin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wildlifes/vuepress-starter/issues"
+    "url": "https://github.com/Sim-Bin/vuepress-starter/issues"
   },
-  "homepage": "https://github.com/Wildlifes/vuepress-starter#readme",
+  "homepage": "https://github.com/Sim-Bin/vuepress-starter#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
