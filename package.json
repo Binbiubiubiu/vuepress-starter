@@ -14,7 +14,7 @@
     "gh-page:sh": "./bin/deploy.sh",
     "gh-page": "yarn docs:build && gh-pages -d vuepress",
     "release-it": "release-it",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && git commit 'docs: CHANGELOG.md' && git push origin master"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && git commit -m 'docs: CHANGELOG.md' && git push origin master"
   },
   "repository": {
     "type": "git",
