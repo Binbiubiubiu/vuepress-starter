@@ -1,6 +1,6 @@
 {
   "name": "vuepress-starter",
-  "version": "2.0.5",
+  "version": "2.1.6",
   "description": "a vuepress template",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
     "cz": "git cz",
     "git:push": "git push --follow-tags origin master",
     "release": "standard-version",
-    "github-release": "conventional-github-releaser -p angular",
-    "np-relaase":"np --no-cleanup --yolo --no-publish",
+    "github-release": "conventional-github-releaser -p angular ",
+    "np-relaase": "np --no-cleanup --yolo --no-publish --preview",
     "gh-page:sh": "./bin/deploy.sh",
     "gh-page": "yarn docs:build && gh-pages -d vuepress",
     "release-it": "release-it"
